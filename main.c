@@ -314,7 +314,7 @@ int main(){
 	teste06();
 
 	//TEST("Insercao na 1 tentativa. Existe compartimento vazio na tabela para receber o registro");
-	//teste07();
+	teste07();
 
 	//TEST("Exclusao de chave inexistente");
 	teste08();

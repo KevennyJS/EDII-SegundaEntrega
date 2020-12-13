@@ -5,6 +5,7 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "cliente.h"
 
 #include "encadeamento_exterior.h"
@@ -73,8 +74,50 @@ int busca(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados)
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, char *nome_arquivo_dados, int num_registros)
 {
-	//TODO: Inserir aqui o codigo do algoritmo de insercao
-    return INT_MAX;
+    FILE *in = fopen(nome_arquivo_hash, "rb");
+    FILE *out = fopen(nome_arquivo_dados, "rb+");
+    if (in == NULL || out == NULL){
+        printf("So sorry, i can't open this archive");
+    }else{
+        Cliente *c,*cAux = NULL;
+        int posClient = -1;
+        int hashCod = funcHash(cod_cli,7);
+        // busca a posição do cliente na hashtable
+        fseek(in, sizeof(int) * hashCod, SEEK_SET);
+        fread(&posClient, sizeof(int), 1, in);
+
+        if(posClient == -1){
+            strcpy(c->nome, nome_cli);
+            c->prox = -1;
+            c->status = OCUPADO;
+            c->cod_cliente = cod_cli;
+
+            return num_registros;
+        }else{
+            do {
+                fseek(out, tamanho_cliente() * posClient, SEEK_SET);
+                c = le_cliente(out);
+                if(c->prox == -1){
+                    c->prox = num_registros;
+                    fseek(out, tamanho_cliente() * posClient, SEEK_SET);
+                    salva_cliente(c,out);
+                    posClient = c->prox;
+                    break;
+                }
+                posClient = c->prox;
+            }while(1); //c->prox != -1
+
+            strcpy(c->nome, nome_cli);
+            c->prox = -1;
+            c->status = OCUPADO;
+            c->cod_cliente = cod_cli;
+
+            return posClient;
+        }
+    }
+    fclose(out);
+    fclose(in);
+    return -1;
 }
 
 int exclui(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados)
