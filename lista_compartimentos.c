@@ -8,7 +8,6 @@
 #include "lista_compartimentos.h"
 #include "compartimento_hash.h"
 
-
 void imprime_compartimentos(ListaCompartimentos *lc)
 {
 	int i;

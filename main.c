@@ -88,7 +88,6 @@ void teste03(){
 	tab_cliente = cria_clientes(1,
 		cliente(50, "Carlos", -1, LIBERADO));
 	salva_clientes(NOME_ARQUIVO_DADOS, tab_cliente);
-
 	int end = busca(50, NOME_ARQUIVO_HASH, NOME_ARQUIVO_DADOS);
 
 	printf("\n O endereço retornado é: %d\n",end); //endereco retornado deve ser igual a -1
@@ -318,7 +317,7 @@ int main(){
 	//teste07();
 
 	//TEST("Exclusao de chave inexistente");
-	//teste08();
+	teste08();
 
 	//TEST("Exclusao do primeiro noh da lista encadeada de um determinado compartimento");
 	//teste09();
