@@ -14,19 +14,27 @@ C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/compartimento_hash.h
 stdio.h
 -
 
-C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/encadeamento_exterior.c
-limits.h
--
-stdlib.h
--
-stdio.h
--
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/encadeamento_exterior.h
+
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/lista_clientes.h
 cliente.h
 C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/cliente.h
-encadeamento_exterior.h
-C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/encadeamento_exterior.h
+
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/lista_compartimentos.h
 compartimento_hash.h
 C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/compartimento_hash.h
 
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/main.c
+stdlib.h
+-
+lista_clientes.h
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/lista_clientes.h
+cliente.h
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/cliente.h
+lista_compartimentos.h
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/lista_compartimentos.h
+compartimento_hash.h
+C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/compartimento_hash.h
+encadeamento_exterior.h
 C:/Users/AllucardHome/Documents/GitHub/EDII-SegundaEntrega/encadeamento_exterior.h
 

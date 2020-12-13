@@ -299,19 +299,19 @@ int main(){
 	teste01();
 
 	//TEST("Busca chave que eh encontrada na primeira tentativa");
-	//teste02();
+	teste02();
 
 	//TEST("Busca chave que existia mas foi removida");
-	//teste03();
+	teste03();
 
 	//TEST("Busca chave que eh encontrada na segunda tentativa");
-	//teste04();
+	teste04();
 
 	//TEST("Busca chave inexistente");
-	//teste05();
+	teste05();
 
 	//TEST("Busca chave que havia sido removida, mas foi reinserida mais adiante no arquivo");
-	//teste06();
+	teste06();
 
 	//TEST("Insercao na 1 tentativa. Existe compartimento vazio na tabela para receber o registro");
 	//teste07();
@@ -320,7 +320,7 @@ int main(){
 	teste08();
 
 	//TEST("Exclusao do primeiro noh da lista encadeada de um determinado compartimento");
-	//teste09();
+	teste09();
 
 	return 0;
 }
