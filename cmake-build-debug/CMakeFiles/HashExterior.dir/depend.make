@@ -7,6 +7,7 @@ CMakeFiles/HashExterior.dir/cliente.c.obj: ../cliente.h
 CMakeFiles/HashExterior.dir/compartimento_hash.c.obj: ../compartimento_hash.c
 CMakeFiles/HashExterior.dir/compartimento_hash.c.obj: ../compartimento_hash.h
 
+CMakeFiles/HashExterior.dir/encadeamento_exterior.c.obj: ../compartimento_hash.h
 CMakeFiles/HashExterior.dir/encadeamento_exterior.c.obj: ../encadeamento_exterior.c
 CMakeFiles/HashExterior.dir/encadeamento_exterior.c.obj: ../encadeamento_exterior.h
 

@@ -36,6 +36,8 @@ void teste01(){
 
 	cria_hash(NOME_ARQUIVO_HASH, 7);
 
+	tab_hash = le_compartimentos(NOME_ARQUIVO_HASH);
+
 	imprime_compartimentos(tab_hash);
 
 	libera_compartimentos(tab_hash);
@@ -294,32 +296,32 @@ void teste09(){
 
 
 int main(){
-	////TEST("Cria Tabela Vazia. Testa o caso de tabela hash com compartimentos vazios");
+	//TEST("Cria Tabela Vazia. Testa o caso de tabela hash com compartimentos vazios");
 	teste01();
 
 	//TEST("Busca chave que eh encontrada na primeira tentativa");
-	teste02();
+	//teste02();
 
 	//TEST("Busca chave que existia mas foi removida");
-	teste03();
+	//teste03();
 
 	//TEST("Busca chave que eh encontrada na segunda tentativa");
-	teste04();
+	//teste04();
 
 	//TEST("Busca chave inexistente");
-	teste05();
+	//teste05();
 
 	//TEST("Busca chave que havia sido removida, mas foi reinserida mais adiante no arquivo");
-	teste06();
+	//teste06();
 
 	//TEST("Insercao na 1 tentativa. Existe compartimento vazio na tabela para receber o registro");
-	teste07();
+	//teste07();
 
 	//TEST("Exclusao de chave inexistente");
-	teste08();
+	//teste08();
 
 	//TEST("Exclusao do primeiro noh da lista encadeada de um determinado compartimento");
-	teste09();
+	//teste09();
 
 	return 0;
 }
